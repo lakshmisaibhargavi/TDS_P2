@@ -1,5 +1,4 @@
-# Update README with detailed project overview and steps used
-readme_content = """# TDS Solver - IITM Project 2 (Final Version)
+# TDS Solver - IITM Project 2 (Final Version)
 
 This project is a complete solution to **Project 2 - TDS Solver** for the **Tools in Data Science** course from the **IIT Madras Online BSc in Data Science** program.
 
@@ -51,17 +50,17 @@ Example `.env`:
 2. Install dependencies:
 
 bash
-pip3 install -r requirements.txt
+`pip3 install -r requirements.txt`
 
 Start the server:
 
-uvicorn app.main:app --reload
+`uvicorn app.main:app --reload`
 
 Test the API:
 
-curl -X POST "http://127.0.0.1:8000/" \
+`curl -X POST "http://127.0.0.1:8000/" \
   -H "Content-Type: multipart/form-data" \
   -F "question=Download and unzip q-extract-csv-zip.zip. What is the value in the 'answer' column?" \
-  -F "file=@tests/q-extract-csv-zip.zip"
+  -F "file=@tests/q-extract-csv-zip.zip"`
 
 {"answer":"e70d8"}
